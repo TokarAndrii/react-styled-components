@@ -37,6 +37,7 @@ const Main = styled.main`
     height: 90vw;
     width: 100%;
     background-size: cover;
+    background-position: 0 -200px ;
   }
 `;
 
