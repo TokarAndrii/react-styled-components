@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Button from './Button';
 import Header from './Header';
+import Footer from './Footer'
 import styled from 'styled-components';
 import { ThemeProvider } from 'styled-components';
 import backgroundImage from './balloons-flight.jpg';
@@ -10,15 +11,16 @@ import backgroundImage from './balloons-flight.jpg';
 const theme = {
   COLOR: "white",
   BACKGROUND: "#3232ff",
-  FONT_SIZE: '24',
+  FONT_SIZE: '32',
   HOVER_BTN: 'olive',
   HEADER_BG: '#282c34',
   HEADER_COL: "white",
   HEADER_APP_LINK: '#61dafb',
   APP_DG_IMAGE: backgroundImage,
-  MAIN_HEIGHT: '2880',
+  MAIN_HEIGHT: '2790',
   FONT: 'Lobster',
-  FONT_FAMILY: 'cursive'
+  FONT_FAMILY: 'cursive',
+  FOOTER_BG_COLOR: 'grey'
 };
 
 const Main = styled.main`
@@ -29,6 +31,13 @@ const Main = styled.main`
   color: ${props => props.theme.COLOR};
   text-transform: capitalize;
   font-family: ${props => props.theme.FONT}, ${props => props.theme.FONT_FAMILY};
+  font-size: ${props => props.theme.FONT_SIZE}px;
+
+  @media (max-width: 1800px){
+    height: 90vw;
+    width: 100%;
+    background-size: cover;
+  }
 `;
 
 function App() {
@@ -40,6 +49,8 @@ function App() {
         <Main>
           this is main
         </Main>
+        <Button text="Second button with styled component"></Button>
+        <Footer></Footer>
       </div >
     </ThemeProvider>
   );
