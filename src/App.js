@@ -41,8 +41,8 @@ const themeLight = {
   HEADER_APP_LINK: 'blue',
   APP_DG_IMAGE: backgroundImage2,
   MAIN_HEIGHT: '2300',
-  FONT: 'Lobster',
-  FONT_FAMILY: 'cursive',
+  FONT: 'Acme',
+  FONT_FAMILY: 'sans-serif',
   FOOTER_BG_COLOR: 'white'
 };
 
@@ -56,7 +56,7 @@ const themeSolarized = {
   HEADER_APP_LINK: 'blue',
   APP_DG_IMAGE: backgroundImage3,
   MAIN_HEIGHT: '2560',
-  FONT: 'Lobster',
+  FONT: 'Poiret One',
   FONT_FAMILY: 'cursive',
   FOOTER_BG_COLOR: '#fdf6e3'
 };
